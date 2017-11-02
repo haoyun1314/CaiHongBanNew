@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FamousTeacherListCell" id="KGk-i7-Jjw" customClass="FamousTeacherListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLG-mL-wSG">
+                        <rect key="frame" x="10" y="0.0" width="347" height="83"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ms_touxiang.png" translatesAutoresizingMaskIntoConstraints="NO" id="M0R-cq-cga">
+                                <rect key="frame" x="6" y="12" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2oK-2N-NS5"/>
+                                    <constraint firstAttribute="width" constant="60" id="PUe-iR-y0S"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨鸿年" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIW-4g-xHl">
+                                <rect key="frame" x="73" y="14" width="48" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Pfe-gB-RXV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中央音乐学院教授" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxI-fI-UKE">
+                                <rect key="frame" x="131" y="14" width="112" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7MR-6e-tWr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="著名指挥家，教育家，他的指挥风格热情，细腻，极富表现力。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-Yo-taM">
+                                <rect key="frame" x="73" y="40" width="202" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Xxu-M5-hnl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进老师主页" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUs-WO-ADd">
+                                <rect key="frame" x="283" y="31" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="aFd-Jf-pd8"/>
+                                    <constraint firstAttribute="height" constant="21" id="rdB-UO-ak3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.45098039215686275" green="0.83921568627450982" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XxI-fI-UKE" firstAttribute="leading" secondItem="sIW-4g-xHl" secondAttribute="trailing" constant="10" id="2mj-Fc-Gs3"/>
+                            <constraint firstItem="xVc-Yo-taM" firstAttribute="leading" secondItem="M0R-cq-cga" secondAttribute="trailing" constant="7" id="RK9-Wm-WMg"/>
+                            <constraint firstAttribute="trailing" secondItem="EUs-WO-ADd" secondAttribute="trailing" constant="4" id="TSA-XR-HHa"/>
+                            <constraint firstItem="sIW-4g-xHl" firstAttribute="leading" secondItem="M0R-cq-cga" secondAttribute="trailing" constant="7" id="Tzh-ai-OCd"/>
+                            <constraint firstItem="M0R-cq-cga" firstAttribute="centerY" secondItem="YLG-mL-wSG" secondAttribute="centerY" id="Y5k-XH-vJ5"/>
+                            <constraint firstItem="M0R-cq-cga" firstAttribute="leading" secondItem="YLG-mL-wSG" secondAttribute="leading" constant="6" id="dOa-Wg-EMT"/>
+                            <constraint firstItem="EUs-WO-ADd" firstAttribute="centerY" secondItem="YLG-mL-wSG" secondAttribute="centerY" id="lyO-Xl-9Dl"/>
+                            <constraint firstItem="xVc-Yo-taM" firstAttribute="top" secondItem="XxI-fI-UKE" secondAttribute="bottom" constant="6" id="oIz-03-WPf"/>
+                            <constraint firstItem="XxI-fI-UKE" firstAttribute="top" secondItem="YLG-mL-wSG" secondAttribute="top" constant="14" id="sTO-sH-rpB"/>
+                            <constraint firstAttribute="height" constant="83" id="taa-rb-ngK"/>
+                            <constraint firstItem="sIW-4g-xHl" firstAttribute="top" secondItem="YLG-mL-wSG" secondAttribute="top" constant="14" id="trE-DM-4Nt"/>
+                            <constraint firstItem="EUs-WO-ADd" firstAttribute="leading" secondItem="xVc-Yo-taM" secondAttribute="trailing" constant="8" id="ynC-QY-9IB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="YLG-mL-wSG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="357-sm-CyL"/>
+                    <constraint firstItem="YLG-mL-wSG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4WI-Uq-X7C"/>
+                    <constraint firstAttribute="trailing" secondItem="YLG-mL-wSG" secondAttribute="trailing" constant="18" id="A28-Ph-KUe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="YLG-mL-wSG" id="OAH-xl-BUb"/>
+                <outlet property="headImage" destination="M0R-cq-cga" id="1PO-2e-i0l"/>
+                <outlet property="infoLabel" destination="xVc-Yo-taM" id="vAK-UD-SZx"/>
+                <outlet property="nameLabel" destination="sIW-4g-xHl" id="Pl6-dm-PPu"/>
+                <outlet property="positionLabel" destination="XxI-fI-UKE" id="dVL-l1-JM7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ms_touxiang.png" width="120" height="120"/>
+    </resources>
+</document>

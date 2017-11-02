@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeBeforeVedioVC">
+            <connections>
+                <outlet property="ContentImgeView" destination="vfZ-kG-LFN" id="fzW-tz-lvO"/>
+                <outlet property="backGroundView" destination="qyT-7P-v9w" id="5Cr-fv-nLa"/>
+                <outlet property="backGroundViewImage" destination="b10-gO-K2N" id="oNt-rl-9Bi"/>
+                <outlet property="contentView" destination="k7f-QO-x3a" id="aOU-NN-QfJ"/>
+                <outlet property="goToCourseBtn" destination="kCk-qT-XIj" id="2UF-rY-eeJ"/>
+                <outlet property="segmentedVC" destination="Ccw-Eu-tdm" id="yAq-iv-sTy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyT-7P-v9w">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="b10-gO-K2N">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组-1@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-kG-LFN">
+                            <rect key="frame" x="72" y="32" width="493" height="540"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-QO-x3a">
+                            <rect key="frame" x="71" y="32" width="436" height="540"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccw-Eu-tdm" customClass="HMSegmentedControl">
+                                    <rect key="frame" x="0.0" y="35" width="436" height="45"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="WiC-aE-eSc"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-qT-XIj">
+                                    <rect key="frame" x="168" y="495" width="100" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="I4j-Jq-nMU"/>
+                                        <constraint firstAttribute="height" constant="35" id="e90-w2-o7v"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="继续上课点击@2x.png"/>
+                                    <connections>
+                                        <action selector="goToCoursePage:" destination="-1" eventType="touchUpInside" id="Ckm-QQ-rMT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="kCk-qT-XIj" firstAttribute="centerX" secondItem="k7f-QO-x3a" secondAttribute="centerX" id="5RQ-I6-DiL"/>
+                                <constraint firstAttribute="bottom" secondItem="kCk-qT-XIj" secondAttribute="bottom" constant="10" id="7Ix-7P-68m"/>
+                                <constraint firstItem="Ccw-Eu-tdm" firstAttribute="top" secondItem="k7f-QO-x3a" secondAttribute="top" constant="35" id="IyE-wa-dNc"/>
+                                <constraint firstAttribute="trailing" secondItem="Ccw-Eu-tdm" secondAttribute="trailing" id="KmO-TC-csu"/>
+                                <constraint firstItem="Ccw-Eu-tdm" firstAttribute="leading" secondItem="k7f-QO-x3a" secondAttribute="leading" id="i09-xt-VAc"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgd-Ct-qZ0">
+                            <rect key="frame" x="10" y="8" width="16" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Ag8-wY-gEm"/>
+                                <constraint firstAttribute="width" constant="16" id="zRp-N8-K1D"/>
+                            </constraints>
+                            <state key="normal" image="goBack@2x.png"/>
+                            <connections>
+                                <action selector="goBackPage:" destination="-1" eventType="touchUpInside" id="V9Q-kW-0iX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.37022668330000003" green="1" blue="0.4126996463" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="xgd-Ct-qZ0" firstAttribute="leading" secondItem="qyT-7P-v9w" secondAttribute="leading" constant="10" id="399-XS-efi"/>
+                        <constraint firstItem="k7f-QO-x3a" firstAttribute="leading" secondItem="qyT-7P-v9w" secondAttribute="leading" constant="71" id="Bkg-5u-LOO"/>
+                        <constraint firstAttribute="trailing" secondItem="vfZ-kG-LFN" secondAttribute="trailing" constant="35" id="DTR-NW-zMT"/>
+                        <constraint firstItem="vfZ-kG-LFN" firstAttribute="leading" secondItem="qyT-7P-v9w" secondAttribute="leading" constant="71.5" id="S22-JN-Hy7"/>
+                        <constraint firstItem="k7f-QO-x3a" firstAttribute="top" secondItem="qyT-7P-v9w" secondAttribute="top" constant="32" id="TLc-yb-w34"/>
+                        <constraint firstItem="xgd-Ct-qZ0" firstAttribute="top" secondItem="qyT-7P-v9w" secondAttribute="top" constant="8" id="Wup-qO-BGV"/>
+                        <constraint firstAttribute="trailing" secondItem="k7f-QO-x3a" secondAttribute="trailing" constant="93.5" id="d5s-JH-V5B"/>
+                        <constraint firstAttribute="bottom" secondItem="k7f-QO-x3a" secondAttribute="bottom" constant="28" id="gNZ-xF-YNN"/>
+                        <constraint firstItem="b10-gO-K2N" firstAttribute="top" secondItem="qyT-7P-v9w" secondAttribute="top" id="koO-Ac-cOE"/>
+                        <constraint firstAttribute="bottom" secondItem="vfZ-kG-LFN" secondAttribute="bottom" constant="28" id="nL1-u5-Oab"/>
+                        <constraint firstItem="b10-gO-K2N" firstAttribute="leading" secondItem="qyT-7P-v9w" secondAttribute="leading" id="piu-TY-Khs"/>
+                        <constraint firstAttribute="bottom" secondItem="b10-gO-K2N" secondAttribute="bottom" id="sSg-jj-V6B"/>
+                        <constraint firstItem="vfZ-kG-LFN" firstAttribute="top" secondItem="qyT-7P-v9w" secondAttribute="top" constant="32" id="soL-7x-sbQ"/>
+                        <constraint firstAttribute="trailing" secondItem="b10-gO-K2N" secondAttribute="trailing" id="y1E-VJ-yfp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qyT-7P-v9w" secondAttribute="trailing" id="L0C-1Y-8lH"/>
+                <constraint firstItem="qyT-7P-v9w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SFw-zJ-hkq"/>
+                <constraint firstItem="qyT-7P-v9w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V0Y-qe-QcX"/>
+                <constraint firstAttribute="bottom" secondItem="qyT-7P-v9w" secondAttribute="bottom" id="dd8-En-S0g"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="goBack@2x.png" width="16" height="16"/>
+        <image name="组-1@2x.png" width="16" height="16"/>
+        <image name="继续上课点击@2x.png" width="16" height="16"/>
+        <image name="背景@2x.png" width="16" height="16"/>
+    </resources>
+</document>
